@@ -1,10 +1,8 @@
-# Install minikube and kubernetes
-minikube start
-minikube dashboard
+kubectl apply -f namespace.yml
+kubectl apply -f deployment.yml
+kubectl apply -f service.yml
 
-# Add the ingress facility to minikube
-minikube addons enable ingress
 
-# kindly make the changes in "sudo nano /etc/hosts" as 
-192.168.49.2    sample-ingress.com
 
+# Delecting the deployments
+kubectl delete -f .
